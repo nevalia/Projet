@@ -1,0 +1,29 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="styleresultat.css">
+</head>
+<body>
+<h1>Conclusion<h1>
+
+<input type="hidden" id="Note" value="#">
+<i class="fas fa-smile fa-10x" id="smile"></i>
+<i class="far fa-meh fa-10x" id="humok"></i>
+<i class="fas fa-frown fa-10x" id="angry"></i>
+
+<script type="text/javascript">
+
+	if(document.getElementById("Note").value>7){
+	document.getElementById("smile").style.visibility="visible";
+	}else if (document.getElementById("Note").value<4){
+		document.getElementById("humok").style.visibility="visible";
+	}
+	else if (document.getElementById("Note").value>4 && document.getElementById("Note").value<7){
+		document.getElementById("angry").style.visibility="visible";
+	}
+
+
+</script>
+
+
+</body>
